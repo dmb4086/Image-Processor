@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfb701e9-6aae-48c1-b5fe-602e656a1f2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BitManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ImageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ImageProcessor" />
+      <module name="Image-Processor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ImageProcessor" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,11 +69,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587900765551</updated>
-      <workItem from="1587900768419" duration="279000" />
+      <workItem from="1587900768419" duration="2615000" />
     </task>
+    <task id="LOCAL-00001" summary="starter code added">
+      <created>1587901337039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587901337039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="starter code added" />
+    <option name="LAST_COMMIT_MESSAGE" value="starter code added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="388" y="132" key="CommitChangelistDialog2" timestamp="1587901336946">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="388" y="132" key="CommitChangelistDialog2/1792.23.1920.1057/0.23.1792.1026@0.23.1792.1026" timestamp="1587901336946" />
+    <state width="1750" height="310" key="GridCell.Tab.0.bottom" timestamp="1587980201992">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="310" key="GridCell.Tab.0.bottom/1792.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1587980201992" />
+    <state width="1750" height="310" key="GridCell.Tab.0.center" timestamp="1587980201991">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="310" key="GridCell.Tab.0.center/1792.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1587980201991" />
+    <state width="1750" height="310" key="GridCell.Tab.0.left" timestamp="1587980201990">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="310" key="GridCell.Tab.0.left/1792.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1587980201990" />
+    <state width="1750" height="310" key="GridCell.Tab.0.right" timestamp="1587980201991">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="310" key="GridCell.Tab.0.right/1792.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1587980201991" />
+    <state x="415" y="276" key="Vcs.Push.Dialog.v2" timestamp="1587901339981">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="415" y="276" key="Vcs.Push.Dialog.v2/1792.23.1920.1057/0.23.1792.1026@0.23.1792.1026" timestamp="1587901339981" />
   </component>
 </project>
