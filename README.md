@@ -15,8 +15,14 @@ Where 0 means the component is missing and 255 meaning the component is fully pr
 
 Therefore we need 32 bits to represent a pixel  
 
-/argb.png
+![this screenshot](/argb.png)
 
 And for a 2D image we can arrange those pixels in rows and columns 
 
 And manipulating those rows and columns of pixels we can change how an image looks 
+
+so the final result will be
+
+![this screenshot](/Taj_grayscale.jpg) ![this screenshot](/Taj_sepia.jpg) ![this screenshot](/Taj_negative.jpg) 
+
+
