@@ -11,32 +11,72 @@ public class ImageProcessor {
       // pack values back into the pixel
 
       if (type == "grayscale"){
-         System.out.println("grey");
 
+         int a = (p>>24) &0xff;
+         int r = (p>>16) &0xff;
+         int g = (p>>8) & 0xff;
+         int b = p&0xff;
 
+         int avg = (r+g+b)/3;
+         p = (a<<24) | (avg<<16) | (avg<<8) | avg;
+
+      }
+      else if (type == "sepia"){
+
+         int a = (p>>24) &0xff;
+         int r = (p>>16) &0xff;
+         int g = (p>>8) & 0xff;
+         int b = p&0xff;
+
+         /*
+         calculate new RGB using the formula
+
+         new red = 0.393*red+ 0.769*green + 0.189*blue
+         new green = 0.349*red+ 0.686*green+ 0.168*blue
+         new blue = 0.272*red+ 0.534*green+ 0.131*blue
+          */
+         int NewRed = (int)(0.393*r + 0.769*g + 0.189*b);
+         int NewGreen = (int)(0.349*r + 0.686*g + 0.168*b);
+         int NewBlue = (int)(0.272*r + 0.534*g + 0.131*b);
+
+         if(NewRed > 255){
+            r = 255;
+         }else{
+            r = NewRed;
+         }
+
+         if(NewGreen > 255){
+            g = 255;
+         }else{
+            g = NewGreen;
+         }
+
+         if(NewBlue > 255){
+            b = 255;
+         }else{
+            b = NewBlue;
+         }
+         p = (a<<24) | (r<<16) | (g<<8) | b;
 
 
 
       }
-      else if (type == "grayscale"){
+      else if (type == "negative"){
 
+         int a = (p>>24) &0xff;
+         int r = (p>>16) &0xff;
+         int g = (p>>8) & 0xff;
+         int b = p&0xff;
 
+         r = 255 - r;
+         g = 255 - g;
+         b = 255 - b;
 
-
-
-
-      }
-      else if (type == "grayscale"){
-
-
-
-
-
-
+         p = (a<<24) | (r<<16) | (g<<8) | b;
       }
       else {
          System.out.println("Invalid Type");
-         return 0;
+         System.exit(0);
       }
       
       return p;
@@ -80,8 +120,8 @@ public class ImageProcessor {
    }
 
    public static void main(String args[]) {
-      processImage("/resources/images/Taj.jpg", "Taj_negative.jpg", "negative");
-      processImage("/resources/images/Taj.jpg", "Taj_sepia.jpg", "sepia");
-      processImage("/resources/images/Taj.jpg", "Taj_grayscale.jpg", "grayscale");
+      processImage("/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj.jpg", "/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj_negative.jpg", "negative");
+      processImage("/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj.jpg", "/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj_sepia.jpg", "sepia");
+      processImage("/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj.jpg", "/Users/dev/Documents/GitHub/Image-Processor/out/production/Image-Processor/resources/images/Taj_grayscale.jpg", "grayscale");
    }
 }
